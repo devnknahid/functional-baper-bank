@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>functional baper bank</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+   <header>
+      <h1 class="text-5xl text-center capitalize mt-5">functional <span
+            class="text-red-500 font-medium">bap-er-bank</span>!!!
+      </h1>
+   </header>
+
+   <main>
+      <!-- blance and tranjection -->
+      <section class="mt-5">
+         <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+            <div class="bg-yellow-400 p-2 rounded-lg">
+               <h4 class="text-2xl capitalize">deposit</h4>
+               <h2 class="text-4xl">$<span id="deposit_number">00</span></h2>
+            </div>
+            <div class="bg-red-400 p-2 rounded-lg">
+               <h4 class="text-2xl capitalize">withdrow</h4>
+               <h2 class="text-4xl">$<span id="withdrow_number">00</span></h2>
+            </div>
+            <div class="bg-blue-400 p-2 rounded-lg">
+               <h4 class="text-2xl capitalize">blance</h4>
+               <h2 class="text-4xl">$<span id="blance_number">1240</span></h2>
+            </div>
+
+         </div>
+      </section>
+      <!-- deposit and withdrow -->
+      <section class="mt-5 w-3/4 mx-auto rounded-lg">
+         <div class="grid grid-cols-2 gap-4 ">
+            <div class="bg-violet-400 p-2 rounded-lg">
+               <h3 class="text-3xl mb-4 capitalize text-white">your deposit</h3>
+               <input type="text" class="w-3/4 px-4 py-2 pb-2 mb-4 block" name="" id="deposit_field"
+                  placeholder="$amount you want to deposit">
+               <button class="bg-green-800 px-4 py-2 text-white capitalize hover:bg-green-400 rounded"
+                  id="deposit_btn">deposit</button>
+            </div>
+            <div class="bg-amber-400 p-2 rounded-lg">
+               <h3 class="text-3xl mb-4 capitalize text-white">your withdrow</h3>
+               <input type="text" class="w-3/4 px-4 py-2 pb-2 mb-4 block" name="" id="withdrow_field"
+                  placeholder="$amount you want to deposit">
+               <button class="bg-blue-800 px-4 py-2 text-white capitalize hover:bg-blue-400 rounded"
+                  id="withdrow_btn">deposit</button>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!-- utilitis js -->
+   <script src="js/utilitis.js"></script>
+   <!-- deposit js -->
+   <script src="js/deposit.js"></script>
+   <!-- withdrow -->
+   <script src="js/withdrow.js"></script>
+</body>
+
+</html>
